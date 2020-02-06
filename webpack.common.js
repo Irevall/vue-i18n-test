@@ -18,6 +18,20 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
+        resourceQuery: /blockType=i18n/,
+        type: 'javascript/auto',
+        use: [
+          '@intlify/vue-i18n-loader',
+          'yaml-loader'
+        ]
+      },
+      {
+        test: /\.ya?ml$/,
+        use: [
+          'js-yaml-loader'
+        ]
+      },
+      {
         test: /\.scss$/,
         use: [
           'vue-style-loader',

@@ -1,6 +1,6 @@
 <template>
   <div class="home-content">
-    Welcome home!
+    {{ $t('HomeContent.welcome_home') }}
   </div>
 </template>
 
@@ -13,3 +13,9 @@
 <style lang="scss" scoped>
 
 </style>
+
+<i18n>
+  en:
+    HomeContent:
+      welcome_home: Welcome home!
+</i18n>
